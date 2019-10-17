@@ -107,6 +107,14 @@ function handleClickOption(event) {
 
 function renderQuestion() {
   const { question } = store;
+  var questionHeader = document.querySelector('.quiz-question');
+  var questionOptions = document.querySelector('.js-options-list');
+  questionHeader.classList.add('fade-in');
+  questionOptions.classList.add('fade-out');
+  setTimeout(function() {
+    questionHeader.classList.remove('fade-in');
+    questionOptions.classList.remove('fade-out');
+  }, 2000); 
   document.querySelector('.js-death-time').innerText = question.deathTime;
   document.querySelector('.js-death-character').innerText = question.compareChar;
 
