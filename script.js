@@ -109,11 +109,11 @@ function renderQuestion() {
   const { question } = store;
   var questionHeader = document.querySelector('.quiz-question');
   var questionOptions = document.querySelector('.js-options-list');
-  questionHeader.classList.add('fade-in');
-  questionOptions.classList.add('fade-out');
+  questionHeader.classList.add('anim-fade-in');
+  questionOptions.classList.add('anim-fade-in');
   setTimeout(function() {
-    questionHeader.classList.remove('fade-in');
-    questionOptions.classList.remove('fade-out');
+    questionHeader.classList.remove('anim-fade-in');
+    questionOptions.classList.remove('anim-fade-in');
   }, 2000); 
   document.querySelector('.js-death-time').innerText = question.deathTime;
   document.querySelector('.js-death-character').innerText = question.compareChar;

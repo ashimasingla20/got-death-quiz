@@ -175,20 +175,9 @@ body {
   }
 }
 
-@keyframes fade-slide-up {
-  0% {
-    opacity: 0;
-    transform: translateY(4rem);
-  }
-  100% {
-    opacity: 1;
-    transform: none;
-  }
+
+.anim-fade-in {
+  animation: fade-slide-down 0.5s ease-out forwards;
 }
-.fade-in {
-  animation: fade-slide-down 2s ease-out forwards;
-}
-.fade-out {
-  animation: fade-slide-up 2s ease-out forwards;
-}
+
 
