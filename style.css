@@ -175,9 +175,11 @@ body {
   }
 }
 
-
 .anim-fade-in {
   animation: fade-slide-down 0.5s ease-out forwards;
 }
 
+.anim-fade-in-buttons {
+  animation: fade-slide-down 0.5s 1s ease-out forwards;
+}
 

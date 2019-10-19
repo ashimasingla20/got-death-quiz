@@ -107,13 +107,13 @@ function handleClickOption(event) {
 
 function renderQuestion() {
   const { question } = store;
-  var questionHeader = document.querySelector('.quiz-question');
+  var questionHeader = document.querySelector('.js-quiz-question');
   var questionOptions = document.querySelector('.js-options-list');
   questionHeader.classList.add('anim-fade-in');
-  questionOptions.classList.add('anim-fade-in');
+  questionOptions.classList.add('anim-fade-in-buttons');
   setTimeout(function() {
     questionHeader.classList.remove('anim-fade-in');
-    questionOptions.classList.remove('anim-fade-in');
+    questionOptions.classList.remove('anim-fade-in-buttons');
   }, 2000); 
   document.querySelector('.js-death-time').innerText = question.deathTime;
   document.querySelector('.js-death-character').innerText = question.compareChar;
